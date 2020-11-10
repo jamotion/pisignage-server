@@ -14,9 +14,9 @@
       </div>
     </div>
     <div ng-show="savedFiles.length == 0" class="panel-body">
-      Please register the player ID
-      at pisignage.com to generate the license files.Then either save the license file from the email or download
-      at pisignage.com/subscriptions.<br><br>
+        Please ask <a href="https://jamotion.ch">Jamotion GmbH</a> to get additional licenses.<br/>
+        Then upload to received lincense files here.
+      <br><br>
       By uploading license files to your local server, they are downloaded to players automatically.
     </div><small ng-show="statusMsg" class="alert alert-danger">{{statusMsg}}</small>
     <ul class="list-group">
@@ -34,7 +34,7 @@
     <div class="panel-body">
       <form role="form" name="settingsForm" class="form-horizontal">
         <div class="form-group">
-          <label for="user" class="col-xs-4 control-label">username at pisignage.com</label>
+          <label for="user" class="col-xs-4 control-label">username of license management (usually jamotionch)</label>
           <div class="col-xs-4">
             <div class="input-group">
               <input type="text" name="user" ng-model="settings.installation" required="" class="form-control"/><span class="input-group-btn"><a type="button" ng-click="saveSettings()" ng-disabled="!settingsForm.user.$dirty" class="btn btn-success">SAVE</a></span>

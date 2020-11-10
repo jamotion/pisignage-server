@@ -14,9 +14,9 @@
 
 
         .panel-body(ng-show='savedFiles.length == 0')
-                | Please register the player ID
-                | at pisignage.com to generate the license files.Then either save the license file from the email or download
-                | at pisignage.com/subscriptions.<br><br>
+                | Please send the player ID
+                | to digitalmedia@jamotion.ch to receive the license files. Then either save the license file from the email.
+                | <br><br>
                 | By uploading license files to your local server, they are downloaded to players automatically.
         small.alert.alert-danger(ng-show='statusMsg') {{statusMsg}}
         ul.list-group
@@ -31,7 +31,7 @@
         .panel-body
             form.form-horizontal(role='form', name='settingsForm')
                 .form-group
-                    label.col-xs-4.control-label(for="user") username at pisignage.com
+                    label.col-xs-4.control-label(for="user") username of license management (usually jamotionch)
                     div.col-xs-4
                         .input-group
                             input.form-control(type='text', name='user', ng-model='settings.installation', required='')
